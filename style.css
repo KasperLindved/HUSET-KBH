@@ -1,9 +1,111 @@
+
 .event{
-    border: 1px solid black;
+    border: 5px ridge grey;
+    border-top-color:black;
+    border-bottom-style:double;
     padding: 1.5em;
+    margin-bottom:25px;
 }
 
 .event .image{
     width:500px;
     height:200px;
+
+}
+
+header{
+    border-bottom: 2px solid red;
+    padding-bottom:2.5em;
+}
+
+body{
+    background-color:#EFF6FE;
+    padding: 1.5em;
+}
+
+.nav{
+    height:60px;
+    background-color:black;
+    position:relative;
+    top:1em;
+    color:white;
+    text-align:center;
+}
+
+h1{
+    font-family:"Helvetica";
+    font-size:40px;
+    text-align:center;
+}
+
+h1.headline{
+    font-family:"Huset";
+    font-weight:normal;
+    font-size:150px;
+    font-style: normal;
+    text-align:center;
+    text-decoration:none;
+}
+
+h2{
+    color:red;
+    font-family:"Calibri";
+    border-bottom:2px solid black;
+}
+
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+
+.loader{
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    animation: load 2s ease-out infinite;
+}
+
+@keyframes load{
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+}
+
+
+p{
+    font-family:"Helvetica";
+    font-size:20px;
+}
+
+@media only screen and (min-width: 52em) {
+
+section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:1.5m;
+}
+    .event{
+    border: 5px ridge grey;
+    border-top-color:black;
+    border-bottom-style:double;
+    padding: 1.5em;
+    margin-bottom:25px;
+    margin-right:20px;
+}
+
+@media only screen and (min-width: 72em) {
+
+section{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding:2em;
+}
+    .event{
+    border: 5px ridge grey;
+    border-top-color:black;
+    border-bottom-style:double;
+    padding: 1.5em;
+    margin-bottom:50px;
+    margin-right:40px;
 }

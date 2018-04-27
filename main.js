@@ -1,7 +1,15 @@
 let template = document.querySelector("#eventtemp").content;
-let eventlist = document.querySelector("#eventlist")
+let eventlist = document.querySelector("#eventlist");
 let page = 1;
 let lookingForData = false;
+let home = document.querySelector("header");
+
+home.addEventListener("click",homepage);
+
+function homepage(){
+    console.log("Refresh");
+    location.reload();
+}
 
 function fetchData(){
     lookingForData=true;
