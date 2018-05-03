@@ -9,7 +9,6 @@
 .event .image{
     width:500px;
     height:200px;
-
 }
 
 header{
@@ -19,20 +18,29 @@ header{
 
 @font-face {
     font-family:"Huset";
-    src: url("HUSET/Font/HUSET.otf");
+    src: url("HUSET/Font/HUSET.woff");
 }
 
-nav li{
+.navlist{
     display:inline-block;
     font-family:"Huset";
     font-weight:normal;
-    font-size:25px;
+    font-size:120%;
     font-style: normal;
     text-align:center;
     text-decoration:none;
     position:relative;
     top:18px;
-    margin-right:1em;
+    margin-right:.5em;
+}
+
+.menu{
+    display:block;
+    background-color:black;
+}
+
+.hidden{
+    display:none;
 }
 
 body{
@@ -49,6 +57,17 @@ body{
     text-align:center;
 }
 
+aside ul{
+    padding:1.5em;
+}
+
+aside ul a{
+    font-family:Helvetica;
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+}
+
 h1{
     font-family:"Helvetica";
     font-size:40px;
@@ -58,22 +77,34 @@ h1{
 h1.headline{
     font-family:"Huset";
     font-weight:normal;
-    font-size:150px;
+    font-size:100px;
     font-style: normal;
     text-align:center;
     text-decoration:none;
 }
 
 h2{
-    color:red;
+    color:black;
     font-family:"Calibri";
     border-bottom:2px solid black;
+}
+
+h2 span{
+    color:red;
+}
+
+p a{
+    color:red;
 }
 
 img{
     display:block;
     margin-left:auto;
     margin-right:auto;
+    width:100%;
+}
+
+#logo{
     width:70%;
 }
 
@@ -98,13 +129,14 @@ p{
     font-size:20px;
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 44em) {
 
 section{
     display:grid;
     grid-template-columns:1fr 1fr;
     padding:1.5m;
 }
+
     .event{
     border: 5px ridge grey;
     border-top-color:black;
@@ -118,15 +150,26 @@ nav li{
     display:inline-block;
     font-family:"Huset";
     font-weight:normal;
-    font-size:40px;
+    font-size:35px;
     font-style: normal;
     text-align:center;
     text-decoration:none;
     position:relative;
     top:8px;
-    margin-right:70px;
-    margin-left:10px;
+    margin-right:25px;
+    margin-left:25px;
     }
+
+    h1.headline{
+    font-family:"Huset";
+    font-weight:normal;
+    font-size:150px;
+    font-style: normal;
+    text-align:center;
+    text-decoration:none;
+    }
+
+}
 
 @media only screen and (min-width: 72em) {
 
@@ -158,4 +201,9 @@ nav li{
     margin-right:80px;
     margin-left:20px;
     }
+
+    #logo{
+        width:50%;
+    }
+
     }

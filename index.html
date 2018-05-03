@@ -9,17 +9,16 @@
 </head>
 <body>
    <header>
-       <img src="HUSET/Logo.png" alt="Huset Logo">
+       <img id="logo" src="HUSET/Logo.png" alt="Huset Logo">
    </header>
-   <div class="nav">
 
-       <nav>
-            <li>CATEGORIES</li>
-            <li>VENUE</li>
-            <li>DATE</li>
-            <li>GENRE</li>
-        </nav>
-   </div>
+    <div class="nav">
+        <div class="navlist" id="cat">CATEGORIES</div>
+    </div>
+
+    <aside class="menu hidden">
+         <ul></ul>
+    </aside>
 
     <h1 class="headline">EVENTS</h1>
     <section id="eventlist">
@@ -29,11 +28,13 @@
             <img src="" alt="Event Image">
             <h2 class="price"><span>PRICE</span> kr.</h2>
             <div class="description">Description</div>
+            <p><a class="readmore" href="subpage.html?id=1">Read More</a></p>
             </article>
         </template>
     </section>
     <div class="loader"><img id="loader" src="HUSET/LOADER.png" alt="Loader"></div>
 
     <script src="main.js"></script>
+    <script src="navmenu.js"></script>
 </body>
 </html>
